@@ -1,80 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-     /*   div{
-          background-color: #fffdd0;
-          width: 200px;
-          height: 200px;
-          padding: 10px;
-          border: 15px solid gray;
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-        }*/
-         img{ 
-          width: 100px; 
-          height: 100px;
-          float:right 
-         }
-         #box1{
-           background-color: white;
-           width: 100px;
-           height: 100px;
-           border: 15px solid blue;
-         }
-         
-         #box2{
-           background-color: white;
-           width: 100px;
-           height: 100px;
-           border: 15px solid blue;
-         }
-         
-         #box3{
-           background-color: rgb(255, 255, 255);
-           width: 100px;
-           height: 100px;
-           border: 15px solid blue;
-         }
-         
-         #box4{
-          background-color: white;
-           width: 100px;
-           height: 100px;
-           border: 15px solid blue;
-         }
-        
-         #box5{
-          background-color: white;
-           width: 100px;
-           height: 100px;
-           border: 15px solid blue;
-         }
-        
-        
- </style>
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 </head>
 <body>
-  <div id="box1" >
-      <img src="OR.png" alt="non viene caricato" >
-  </div>
 
-  <div id="box2" >
-    <img src="NAND.png" alt="non viene caricato" >
-</div>
-<div id="box3" >
-    <img src="NOT.png" alt="non viene caricato" >
-</div>
-<div id="box4" >
-    <img src="NOR.png" alt="non viene caricato" >
-</div>
-<div id="box5" >
-    <img src="AND.png" alt="non viene caricato" >
-</div>
-  
+<h2>OPERATORI LOGICI</h2>
+
+<table>
+  <tr>
+    <th>A</th>
+    <th>B</th>
+    <th>A AND B</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+</table>
+
 </body>
 </html>
+
