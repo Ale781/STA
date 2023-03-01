@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Calcolatore kcal</title>
+
+    <style>
+      #output{
+       
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Convertitore Valute </h2>
+        
+        
+
+    <title>Esercitazione</title>
+
+    <style>
+      #output{
+       
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+     
+          <div class="form-group">
+            <label for="dato1">USD</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+
+            <label for="dato2">AUD</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+
+            <label for="dato3">BRL</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+
+            <label for="dato4">CAD</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+
+            <label for="dato5">CHF</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+            
+            <label for="dato6">CNY</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+
+            <label for="dato7">DKK</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+
+            <label for="dato8">GPB</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+            
+
+
+
+           
+          </div>
+         
+         <button type="submit" onclick="calcoloUSD()" class="btn btn-primary">Calcolo USD</button>
+          <div id="output">
+
+        <button type="submit" onclick="calcoloAUD()" class="btn btn-primary">Calcolo AUD</button>
+         <div id="output">
+
+        <button type="submit" onclick="calcoloBRL()" class="btn btn-primary">Calcolo BRL</button>
+          <div id="output">    
+
+        <button type="submit" onclick="calcoloCAD()" class="btn btn-primary">Calcolo CAD</button>
+          <div id="output">
+            
+        <button type="submit" onclick="calcoloCHF()" class="btn btn-primary">Calcolo CHF</button>
+          <div id="output">
+         
+        <button type="submit" onclick="calcoloCNY()" class="btn btn-primary">Calcolo CNY</button>
+          <div id="output"> 
+             
+         <button type="submit" onclick="calcoloDKK()" class="btn btn-primary">Calcolo DKK</button>
+            <div id="output">
+                
+         <button type="submit" onclick="calcoloGPB()" class="btn btn-primary">Calcolo GPB </button>
+            <div id="output">        
+                             
+
+        
+
+
+    <script>
+         function calcoloUSD() {
+
+            let euro=0;
+            let USD=0;
+            euro=document.getElementById("dato1").value;
+            USD= euro*(1/1,06595)
+            alert("Gli euro inseriti equivalgono: "+USD,"");
+
+
+         }
+
+                function calcoloAUD() {
+
+                let euro=0;
+                let AUD=0;
+                 euro=document.getElementById("dato1").value;
+                 AUD= euro*(1/1,57554)
+
+                 alert("Gli euro inseriti equivalgono: "+AUD,"");
+
+
+                 }
+
+            
+                 function calcoloBRL() {
+
+             let euro=0;
+             let BRL=0;
+             euro=document.getElementById("dato1").value;
+             BRL= euro*(1/5,5753)
+
+             alert("Gli euro inseriti equivalgono: "+BRL,"");
+
+
+             }
+              
+             function calcoloCAD() {
+
+             let euro=0;
+             let CAD=0;
+             euro=document.getElementById("dato1").value;
+             CAD= euro*(1/1,44975)
+
+             alert("Gli euro inseriti equivalgono: "+CAD,"");
+
+
+              }
+
+
+              function calcoloCHF() {
+
+              let euro=0;
+              let CHF=0;
+              euro=document.getElementById("dato1").value;
+              CHF= euro*(1/0,999)
+
+              alert("Gli euro inseriti equivalgono: "+CHF,"");
+
+
+              }  
+               
+              function calcoloCNY() {
+
+              let euro=0;
+              let CNY=0;
+              euro=document.getElementById("dato1").value;
+              CNY= euro*(1/7,3239)
+
+              alert("Gli euro inseriti equivalgono: "+CNY,"");
+
+
+             }  
+
+
+             function calcoloDKK() {
+
+             let euro=0;
+             let DKK=0;
+             euro=document.getElementById("dato1").value;
+             DKK= euro*(1/7,44337)
+
+             alert("Gli euro inseriti equivalgono: "+DKK,"");
+
+
+             }  
+               
+
+             function calcoloGBP() {
+
+             let euro=0;
+             let GPB=0;
+             euro=document.getElementById("dato1").value;
+             GBP= euro*(1/0,88516)
+
+             alert("Gli euro inseriti equivalgono: "+GBP,"");
+
+
+            }  
+  
+
+
+
+    </script>
+</body>
+</html>
+
+
+          </div>
+      </div>
+
+
+
+    <script>
+         function calcolo () {
+
+            gcarb=document.getElementById("dato1").value*4;
+
+            kcal=gcarb+gprot+gfat
+            alert("In totale hai assunto: "+euro+"");
+
+
+         }
+
+    </script>
+</body>
+</html>
