@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legge di Ohm 3</title>
+</head>
+<body>
+    <div class= "container">
+        <h2>esercizio  legge di ohm parte 3</h2>
+        <div class= "form-group">
+            <label for="intensità">intensità di corrente </label>
+            <input type ="text" class="form-control" id="intensità" name="intensità">
+            <label for="tensione">differenza di potenziale </label>
+            <input type="text" class="form-control"  id="tensione"  name="tensione">
+
+        </div>
+        <div>
+            <p>calcolo della resistenza</p>
+            <button type="submit" onclick="calcolo_resistenza()" class="btn btn-primary">calcola </button>
+        </div>
+        <div>
+            <p>calcolo della potenza dissipata in un'ora </p>
+            <button type="submit" onclick="calcolo_potenza()" class="btn btn-primary">calcola </button>
+        </div>
+        <div id="output"> </div>
+
+    </div>
+    <script>
+           function calcolo_resistenza() {
+                let R=0
+                I = document.getElementById("intensità").value
+                V = document.getElementById("tensione").value
+                R = V/I
+                alert("la resistenza è "+R+ " ohm" )
+           }
+            
+           
+           function calcolo_potenza(){
+                let E=0
+                let t=3600
+                let R = 0
+                I = document.getElementById("intensità").value
+                V = document.getElementById("tensione").value
+                R = V/I
+                E = R*I^2 *t
+                alert("l' energia dissipata in un'ora è " +E+" J")
+           }
+    </script>
+</body>
+</html>
