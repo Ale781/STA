@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+   
+
+
+    <title>Calcolo della intensita di corrente</title>
+
+    <style>
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Calcolo intensita </h2>
+     
+          <div class="form-group">
+            <label for="dato1">volt</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+
+            <label for="dato2">resistenza</label>
+            <input type="text" class="form-control" id="dato2" name="dato2">
+
+          
+
+
+
+           
+          </div>
+         
+          <button type="submit" onclick="calcolaintensita ()" class="btn btn-primary">Calcola</button>
+          <div id="output">
+
+
+          </div>
+      </div>
+
+
+
+    <script>
+         function calcolaintensita() {
+
+            
+            let R=0;
+            let V=0;
+            V=document.getElementById("dato1").value;
+ 
+            R=document.getElementById("dato2").value;
+
+          
+
+            I= (V/R)
+            alert("La tensione  è"+I+"");
+
+
+         }
+
+    </script>
+</body>
+</html>
