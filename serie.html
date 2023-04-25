@@ -11,6 +11,12 @@
     <div class="container">
         <h2>Calcolo serie </h2>
 
+            <label for="resistenza">resistore </label>
+            <input type ="text" class="form-control" id="resistenza" name="resistenza">
+
+            <label for="tensione">differenza di potenziale </label>
+            <input type="text" class="form-control"  id="tensione"  name="tensione">
+
             <label for="dato1">R1</label>
             <input type="text" class="form-control" id="dato1" name="dato1">
 
@@ -25,15 +31,20 @@
            
           </div>
          
-          <button type="submit" onclick="calcolaserie ()" class="btn btn-primary">Calcola</button>
-          <div id="output">
-
-
+          <div>
+            <p>calcolo della resistenza</p>
+            <button type="submit" onclick="calcolo_resistenza()" class="btn btn-primary">calcola </button>
+        </div>
+        <div>
+            <p>calcolo dell' intensità </p>
+            <button type="submit" onclick="calcolo_intensità()" class="btn btn-primary">calcola </button>
+        </div>
+        <div id="output"> </div>
           </div>
       
 
     <script>
-         function calcolaserie() {
+         function calcolo_resistenza() {
             
          let   Rtot=0
          let   R1=0
@@ -51,6 +62,18 @@
 
             alert("La resistenza totale  è "+Rtot+"ohm")
 
+         }
+
+         function calcolo_intensità(){
+
+        let R=0
+        let V=0
+        let  I=0
+          
+         R = document.getElementById("resistenza").value
+         V = document.getElementById("tensione").value
+        I = V/R 
+        alert("la intensità è "+I+ " ohm" )
          }
     </script>
 </body>
