@@ -9,7 +9,7 @@
    
 
 
-    <title></title>
+    <title>legge di Ohm</title>
 
     <style>
     
@@ -19,48 +19,80 @@
 <body>
     <div class="container">
         <h2>Legge di Ohm</h2>
-        <h3>Calcolo Resistenza</h3>
+        <h3>Calcolo tensione</h3>
      
           <div class="form-group">
             <label for="dato1">resistenza</label>
             <input type="text" class="form-control" id="dato1" name="dato1">
 
             <label for="dato2">intensita di corrente</label>
-            <input type="text" class="form-control" id="dato2" name="dato2">
-
-          
-
-
-
-           
+            <input type="text" class="form-control" id="dato2" name="dato2">  
           </div>
          
           <button type="submit" onclick="calcolatensione()" class="btn btn-primary">Calcola</button>
           <div id="output">
-
-
           </div>
+        
+          <h3>Calcolo resistenza</h3>  
+           <div class="form-group">
+            <label for="dato3">tensione</label>
+            <input type="text" class="form-control" id="dato3" name="dato3">
+
+            <label for="dato4">intensità di corrente </label>
+            <input type="text" class="form-control" id="dato4" name="dato4"> 
+           </div>
+
+          <button type="submit" onclick="calcoloresistenza()" class="btn btn-primary">calcola</button>
+          <div id="output">
+        </div>
+
+            <h3>Calcolo intensità di corrente</h3>
+            <div class="form-group">
+                <label for="dato5">tensione</label>
+                <input type="text" class="form-control" id="dato5" name="dat5">
+    
+                <label for="dato6">resistenza</label>
+                <input type="text" class="form-control" id="dato6" name="dato6"> 
+          </div>
+          <button type="submit" onclick="calcolointensità()" class="btn btn-primary">calcola</button>
+          <div id="output">
+        </div>
       </div>
-
-
-
-    <script>
+<script>
          function calcolatensione() {
 
             
             let Volt=0;
             R=document.getElementById("dato1").value;
- 
+    
             I=document.getElementById("dato2").value;
 
-          
-
             Volt=R*I
-            alert("La tensione V è"+Volt+"");
+            alert("La tensione V è"+Volt+" V");
 
 
          }
+         
+         function calcoloresistenza(){
+            let R=0;
+            V=document.getElementById("dato3").value;
 
-    </script>
+            I=document.getElementById("dato4").value;
+             R=V/I
+             alert("La resistenza R è "+R+" Ohm");
+         }
+
+        
+         function calcolointensità(){
+             let I=0;
+            V=document.getElementById("dato5").value;
+
+            R=document.getElementById("dato6").value;
+            I= V/R
+            alert("La intensità di corrente è "+I+"A")
+         }
+
+
+</script>
 </body>
 </html>
