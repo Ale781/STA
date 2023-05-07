@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+   
+
+
+    <title></title>
+
+    <style>
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Legge di Ohm</h2>
+        <h3>Calcolo Resistenza</h3>
+     
+          <div class="form-group">
+            <label for="dato1">resistenza</label>
+            <input type="text" class="form-control" id="dato1" name="dato1">
+
+            <label for="dato2">intensita di corrente</label>
+            <input type="text" class="form-control" id="dato2" name="dato2">
+
+          
+
+
+
+           
+          </div>
+         
+          <button type="submit" onclick="calcolatensione()" class="btn btn-primary">Calcola</button>
+          <div id="output">
+
+
+          </div>
+      </div>
+
+
+
+    <script>
+         function calcolatensione() {
+
+            
+            let Volt=0;
+            R=document.getElementById("dato1").value;
+ 
+            I=document.getElementById("dato2").value;
+
+          
+
+            Volt=R*I
+            alert("La tensione V è"+Volt+"");
+
+
+         }
+
+    </script>
+</body>
+</html>
